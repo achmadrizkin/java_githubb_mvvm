@@ -32,6 +32,6 @@ public class MainActivityViewModel extends ViewModel {
 
     public void makeApiCall() {
         RetroRepository retroRepository = new RetroRepository(retroServiceInterface);
-        retroRepository.makeAPICall("cat", liveData);
+        retroRepository.makeAPICall("eu", liveData);
     }
 }
