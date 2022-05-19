@@ -30,8 +30,8 @@ public class MainActivityViewModel extends ViewModel {
         return liveData;
     }
 
-    public void makeApiCall() {
+    public void makeApiCall(String query) {
         RetroRepository retroRepository = new RetroRepository(retroServiceInterface);
-        retroRepository.makeAPICall("eu", liveData);
+        retroRepository.makeAPICall(query, liveData);
     }
 }
